@@ -45,6 +45,11 @@ public class Main
 
 		// print the value of the piggybank
 		System.out.println("The piggy bank holds " + fp.format(total));
+
+		// Stretch: ability to remove coins from the piggybank
+		double subtractValue = 1.50;
+		total -= subtractValue;
+		System.out.println("The piggy bank holds " + fp.format(total));
 	}
 
 	public static void main(String[] args)
