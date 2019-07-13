@@ -1,23 +1,32 @@
 package piggybank;
 
-public abstract class Money
+public abstract class Money 
 {
+	double amount = 1;
 	String name;
-	int amount;
 
-	public Money(String name, int amount)
+	public Money(double amount)
 	{
-		this.name = name
-		this.amount = amount
+		this.amount = amount;
 	}
 
-	public String getName()
+	public double getAmount()
 	{
-		return name
+		return 1 * amount;
 	}
 
-	public int getAmount()
+	public String getAmountString()
 	{
-		return amount
+		int i = (int) amount;
+		if (this.getAmount() < 1.00)
+		{
+
+			if (this.amount > 1)
+			{
+				return Integer.toString(i) + " " + this.name + "s";
+			}
+			return Integer.toString(i) + " " + this.name;
+		}
+		return "$" + Integer.toString(i);
 	}
 }

@@ -1,9 +1,9 @@
 package piggybank;
 
-public class Dollar extends Money
+public class Nickel extends Money
 {
-	String name = "Dollar";
-	public Dollar(double amount)
+	String name = "Nickel";
+	public Nickel(double amount)
 	{
 		super(amount);
 	}
@@ -11,7 +11,7 @@ public class Dollar extends Money
 	@Override
 	public double getAmount()
 	{
-		return 1.00 * amount;
+		return 0.05 * amount;
 	}
 
 	@Override
