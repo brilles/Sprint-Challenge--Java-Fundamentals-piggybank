@@ -1,11 +1,11 @@
 package piggybank;
 
-public abstract class Animal
+public abstract class Money
 {
 	String name;
 	int amount;
 
-	public Animal(String name, int amount)
+	public Money(String name, int amount)
 	{
 		this.name = name
 		this.amount = amount
@@ -16,7 +16,7 @@ public abstract class Animal
 		return name
 	}
 
-	public String getAmount()
+	public int getAmount()
 	{
 		return amount
 	}
